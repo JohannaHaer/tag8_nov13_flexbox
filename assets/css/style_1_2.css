@@ -5,3 +5,59 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    background-image: url('../img/kylie-osullivan-BfaBLVCBTI8-unsplash.jpg');
+    background-size: cover;
+}
+
+/* Styling des Headers mit Flexbox */
+
+header {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.183);
+    font-size: 12px;
+}
+
+/* Styling des Logos mit white color (font-size 1em) */
+
+.logo {
+    margin: auto 20px auto 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* Styling der Nav-Bar mit Flexbox */
+
+header nav {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+/* Listenelemente mittig zur Nav-Bar ausgerichtet */
+
+header nav li {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling der a-Tags der Nav-Bar mit color white (font-size 0.8em) */
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Styling der Hover-Effekte auf den Nav-Bar-Elementen */
+
+header nav li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,155 @@
+/* Global Styling */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-font-color: rgba(0, 0, 0, 1);
+}
+
+html {
+    font-size: 12px;
+    font-family: 'Lato';
+    background-color: rgba(217, 232, 229, 1);
+}
+
+/* Styling des Headers mit Flexbox */
+
+header {
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 1;
+    flex-wrap: wrap;
+    
+}
+
+/* Styling der Nav-Bar mit Flexbox und 50% der Headerbreite */
+
+header nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 5%;
+}
+
+/* Styling des Logos mit Schriftart Raleway und first-font-color (font-size 1em) */
+
+header nav div {
+    display: flex;
+    gap: 5px;
+}
+
+header nav div a {
+    text-decoration: none;
+    color: var(--first-font-color);
+}
+
+.logo-icon img {
+    width: 10px;
+    height: 10px;
+}
+
+/* Styling der UL-Elemente */
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--first-font-color);
+    font-size: 0.6em;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin-right: 5%;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--first-font-color);
+    font-size: 0.6em;
+}
+
+/* Styling der Main mit Flexbox */
+
+main {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+/* Styling der Fotogallerie 3*2 Fotoreihe */
+
+.gallery {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.gallery h1 {
+    font-size: 1em;
+}
+
+.gallery section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.picture-rows {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.picture-rows img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Positionierung der Preistags im Bild mit relativer und absoluter Positionierung */
+
+.picture-rows div {
+    position: relative;
+}
+
+.picture-rows div p {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    font-size: 0.6em;
+}
+
+
